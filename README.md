@@ -6,7 +6,7 @@ JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一�
 
 详见 README.md 文档。
 
-## day1 - [JavaScript Drum Kit]()
+## day1 - [JavaScript Drum Kit](http://htmlpreview.github.io/?https://github.com/AlvinMi/js_practice-wheel/blob/6f50d06ff7c5e5f26da02c0a44ae8e115aacd8ce/JavaScript30/01-JavaScript%20Drum%20Kit/index_finish.html)
 ## day2 - [JS and CSS Clock]()
 ## day3 - [CSS Variables]()
 ## day4 - [Array Cardio Day 1]()	
