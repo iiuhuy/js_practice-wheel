@@ -36,3 +36,7 @@ JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一�
 ## day28 - [Video Speed Controller]()
 ## day29 - [Countdown Timer]()
 ## day30 - [Whack A Mole]()
+
+# 03 FreeCodeCamp 练习项目
+## 01
+## 02
