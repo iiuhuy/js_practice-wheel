@@ -1,7 +1,7 @@
-# 01 js_practice-wheel
-js_practice &amp; wheel。 js 练习和造轮子的地方！
+# 0x01 about js_practice-wheel
+ 个人 css js 练习的地方！
 
-# 02 JavaScript30 
+# 0x02 JavaScript30 
 JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
 详见 README.md 文档。
@@ -37,6 +37,10 @@ JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一�
 ## day29 - [Countdown Timer]()
 ## day30 - [Whack A Mole]()
 
-# 03 FreeCodeCamp 练习项目
-## 01
-## 02
+# 0x03 FreeCodeCamp 练习项目
+* 01
+* 02
+
+# 0x04 其他练习
+* 01 图片叠加轮播效果
+* [02 CSS3练习绘制腾讯QQ logo](http://htmlpreview.github.io/?https://github.com/AlvinMi/js_practice-wheel/blob/e875874e80d34cdc5dd28180b3e88429b12ace26/02%20CSS3练习绘制腾讯QQ%20logo/index.html)
