@@ -1,0 +1,120 @@
+<!-- 
+    三栏布局
+    三个部分分别是: wrapper、navigation、extra
+
+    要求:  
+        1.同 37 基础上调换 wrapper 和 navigation 顺序.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>38</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <style>
+        /* 基本样式 */
+
+        #container {
+            font-size: 16px;
+            font-family: cursive, sans-serif;
+        }
+
+        p {
+            margin: 0 10px 10px
+        }
+
+        #header {
+            height: 80px;
+            background-color: rgb(238, 238, 238);
+            color: rgb(122, 177, 36);
+            padding-left: 10px;
+            line-height: 80px;
+        }
+
+        #header h1 {
+            margin: 0;
+        }
+
+        #navigation {
+            background-color: rgb(186, 203, 253);
+        }
+
+        #extra {
+            background-color: rgb(253, 133, 67);
+        }
+
+        #footer {
+            height: 14px;
+            padding: 5px 10px 5px 10px;
+            color: #FFF;
+            background-color: #333;
+        }
+
+        #footer p {
+            line-height: 14px;
+            margin: 0px;
+        }
+
+        /* 布局 */
+
+        #container {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        #wrapper {
+            float: right;
+            width: 500px;
+        }
+
+        #navigation {
+            float: left;
+            width: 200px;
+        }
+
+        #extra {
+            /* float: left; */
+            width: 100%;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Header!</h1>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <p>
+                    <strong>1> Content Here!</strong> How many try to change us again and again....How many try to change us again
+                    and again..
+                </p>
+                <p>If they only knew that things that we could be. If they only knew that things that we could be. If they only
+                    knew that things that we could be. </p>
+                <p>You say "I can fix the broken in your heart.You say "I can fix the broken in your heart.You say "I can fix
+                    the broken in your heart</p>
+                <p>Cause my memory's on trial.Cause my memory's on trial.Cause my memory's on trial.Cause my memory's on trial</p>
+            </div>
+        </div>
+        <div id="navigation">
+            <p>
+                <strong>2> Navigation Here!!</strong> I have never been the one trying hard to hold my tongue。I have never been the
+                one trying hard to hold my tongue</p>
+        </div>
+        <div id="extra">
+            <p>
+                <strong>3> More Stuff Here!!!</strong> Do what I want, I'll have it my way。Do what I want, I'll have it my way。。</p>
+        </div>
+        <div id="footer">
+            <p>Here is goes the footer!!!!</p>
+        </div>
+    </div>
+</body>
+
+</html>
