@@ -1,4 +1,4 @@
-# 0x01 about js_practice-wheel
+# about js_practice-wheel
  个人 css js 练习的地方！
 
 ## 00 FreeCodeCamp 练习项目 & codepen
@@ -17,12 +17,40 @@
 
 ## 04 40 个布局练习
 > fork 自 `dodoru` 小姐姐的 [40LayoutExercise.](https://github.com/dodoru/40LayoutExercise)
-* 1.Three percentage columns 
+- 1.Three percentage columns 
+- 2.
+- 3.
+- 4.
+- 5.
+- 6.
+- 7.
+- 8.
+- 9.
+- 10.
+- 11.
+- 12.
+- 13.
+- 14.
+- 15.
+- 16.
+- 17.
+- 18.
+- 19.
+- 20.
+- 21.
+- 22.
+- 23.
+- 24.
+- 25.
+- 26
+
 
 ## JavaScript30 
 JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
-详见 README.md 文档。
+- [在线看所有的 JS30 所有的原项目。](http://30daysofjs.michaeleinsohn.com)
+
+里面也有很多链接的翻译和解释, 可以学习看看。详见 [README.md 文档](https://github.com/wesbos/JavaScript30/blob/be63f4ddd72916d3e2d5fadd4bb91f94b5c211e3/readme.md) 。
 
 * day1 - [JavaScript Drum Kit](http://htmlpreview.github.io/?https://github.com/AlvinMi/js_practice-wheel/blob/6f50d06ff7c5e5f26da02c0a44ae8e115aacd8ce/JavaScript30/01-JavaScript%20Drum%20Kit/index_finish.html)
 * day2 - [JS and CSS Clock]()
@@ -54,3 +82,7 @@ JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一�
 * day28 - [Video Speed Controller]()
 * day29 - [Countdown Timer]()
 * day30 - [Whack A Mole]()
+
+## MDN 
+- [basic-beginner-html-site-styled](https://codepen.io/alvinmi/pen/JaXarz)
+- 
