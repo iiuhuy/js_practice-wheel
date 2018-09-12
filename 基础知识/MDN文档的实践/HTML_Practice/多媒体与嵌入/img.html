@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <figure>
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+            alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth" width="200"
+            height="171" title="A T-Rex on display in the Manchester University Museum">
+        <figcaption>
+            A T-Rex on display in the Manchester University Museum.
+        </figcaption>
+    </figure>
+
+    <hr>
+    <h1>Below is a simple video example</h1>
+
+    <video src="rabbit320.webm" controls>
+        <br>
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+    </video>
+
+    <hr>
+    <h1>下面是在所有现代浏览器中播放的视频</h1>
+    <video controls>
+        <!-- 将 src 属性从 <video> 标签中移除，转而将它放在几个单独的标签 <source> 当中。
+            在这个例子当中，浏览器将会检查 <source> 标签，并且播放第一个与其自身 codec 相匹配的媒体。
+            视频应当包括 WebM 和 MP4 两种格式，这两种在目前已经足够支持大多数平台和浏览器。 -->
+        <source src="rabbit320.mp4" type="video/mp4">
+        <source src="rabbit320.webm" type="video/webm">
+
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+
+    </video>
+
+    <hr>
+    <h1>其他功能</h1>
+    <video controls width="400" height="400" loop muted preload="auto" poster="poster.png">
+        <source src="rabbit320.mp4" type="video/mp4">
+        <source src="rabbit320.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+
+    </video>
+
+    <hr>
+    <h1>这是一个音频</h1>
+    <audio controls>
+        <source src="viper.mp3" type="audio/mp3">
+        <source src="viper.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+    </audio>
+</body>
+
+</html>

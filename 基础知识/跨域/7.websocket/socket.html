@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 高级 api  不兼容, 一般使用 socket.io库
+        // 这里简单用原生的例子
+        let socket = new WebSocket('ws://localhost:3000');    // 线程的 api 协议, server.js 需要引入 ws 库
+        // 连接成功以后会触发事件
+        socket.onopen = function() {  
+             socket.send('emmm, 真香~');    // 如果是多个通讯, 就是先发给服务器, 服务器发个另一个页面
+        }
+        socket.onmessage = function(e) {  
+            console.log(e.data);
+        }
+    
+    </script>
+</body>
+</html>

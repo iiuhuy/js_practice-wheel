@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a</title>
+</head>
+<body>
+    <iframe src="http://localhost:4000/b.html" 
+    frameborder="0" id="frame" onload="load()"></iframe>
+    <script> 
+        function load() {  
+            // 拿到 frame
+            let frame = document.getElementById('frame');
+            // 拿到 frame 里面的 window , 发送的时候要告诉域 
+            frame.contentWindow.postMessage('emmm, 真香~',
+            'http://localhost:4000')
+
+            // 接收一下 b 的消息
+            window.onmessage = function (e) {  
+                console.log(e.data);
+            }
+        }
+    </script>
+
+</body>
+</html>

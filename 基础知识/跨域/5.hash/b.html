@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a & b 同域 -->
+    <script>
+        // 当前的 Window 谁引的 b？  -- c
+        // 那谁引用的 c 呢？ a
+        window.parent.parent.location.hash = location.hash;   // window.parent.parent  找到了传说中的老爷爷
+
+    </script>
+</body>
+</html>

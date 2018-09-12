@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    a 和 b　是同域的　http://localhost:3000 <br>
+    c　是独立的　　http://localhost:4000    <br>
+    a 获取 c 的数据 <br>
+
+    a 先引用 c,(跨域) c 把值放到 window.name 上(跨域是不能直接拿数据的). <br>
+    把 a 引用的地址改到 b, 地址改到 b 后 window.name 是还在的。这就解决了问题。
+    <iframe src="http://localhost:4000/c.html" frameborder="0" id='iframe' onload="load()"></iframe>
+    
+    <script>
+
+        let first = true;  // 这个变量在这儿的作用是, 设置一个标志位, 放置 一直加载 load 进入死循环。
+        function load() {  
+            if(first) { // 
+                let iframe = document.getElementById('iframe');
+                // 把 a 的地址改为 b
+                iframe.src = 'http://localhost:3000/b.html';
+                first = false;
+            } else {
+                console.log(iframe.contentWindow.name);
+            }
+        }
+    </script>
+
+</body>
+</html>

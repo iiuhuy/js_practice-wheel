@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    hello a
+    <!-- 还是使用 iframe 举个例子  -->
+    <!-- a 访问 b -->
+    <iframe src="http://b.hao.cn/a.html" frameborder="0" id="iframe" onload="load()"></iframe>
+
+    <script>
+        function load() {  
+            console.log(frame.contentWindow.a);
+        }
+    </script>
+</body>
+</html>

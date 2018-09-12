@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 路径后面的 hash 值可以用来通讯 -->
+    <!-- 目的:  a 访问 c -->
+    <!-- a 给 c 传一个 hash 值, c 收到 hash 值后, c 把 hash 值传给 b, b 将结果放到 a 的 hash 值中。 -->
+    <iframe src="http://localhost:4000/c.html#ilikeyou" frameborder="0"></iframe>  
+
+    <!-- 找到老爷爷之后 -->
+    <script>
+        window.onhashchange = function () {  
+            console.log(location.hash);
+        }
+    </script>
+</body>
+</html>

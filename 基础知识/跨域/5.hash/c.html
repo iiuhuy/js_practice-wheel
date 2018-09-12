@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(location.hash);     // 收到 a 里面的值
+        let iframe = document.createElement('iframe');  // 创建一个 iframe
+        // c 把 hash 值传给 b
+        iframe.src = 'http://localhost:3000/b.html#ilikeyoutoo';
+        document.body.appendChild(iframe);      // 现在 b & a 是同域的。
+    </script>
+</body>
+</html>

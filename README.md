@@ -1,49 +1,11 @@
 # about js_practice-wheel
  个人 css js 练习的地方！
 
-## 00 FreeCodeCamp 练习项目 & codepen
-### FreeCodeCamp 
-* 01
-* 02
-*
-### CodePen 
-* [01 raindrops](https://codepen.io/alvinmi/pen/MXYgdx). 雨滴滑落效果, 主要参考自 [Adobe blog](https://blogs.adobe.com/creativecloud/css-only-raindrops-on-window-effect/)。 自己的比较简单.
+## Canvas_Study
 
-## 01 图片叠加轮播效果
-
-## [02 CSS3练习绘制腾讯QQ logo](http://htmlpreview.github.io/?https://github.com/AlvinMi/js_practice-wheel/blob/e875874e80d34cdc5dd28180b3e88429b12ace26/02%20CSS3练习绘制腾讯QQ%20logo/index.html)
-
-## 03 Canvas_Study
-
-## 04 40 个布局练习
+## 40 个布局练习
 > fork 自 `dodoru` 小姐姐的 [40LayoutExercise.](https://github.com/dodoru/40LayoutExercise)
 - 1.Three percentage columns 
-- 2.
-- 3.
-- 4.
-- 5.
-- 6.
-- 7.
-- 8.
-- 9.
-- 10.
-- 11.
-- 12.
-- 13.
-- 14.
-- 15.
-- 16.
-- 17.
-- 18.
-- 19.
-- 20.
-- 21.
-- 22.
-- 23.
-- 24.
-- 25.
-- 26
-
 
 ## JavaScript30 
 JavaScript30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。

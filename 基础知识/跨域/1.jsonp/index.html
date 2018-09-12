@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="cdn"> -->
+</head>
+<body>
+    <!-- <img src="" alt=""> -->
+    <!-- <script src=""></script> -->
+    <!-- https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=&json=1&p=3&sid=1446_25809_26967_21089_26350_22157&req=2&bs=234567890-&csor=0&cb=jQuery110202905867155785078_1536328722283&_=1536328722284 -->
+    <!-- 然后我们修改一下这个连接 -->
+    <!-- https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a&cb=show -->
+    <script>
+        // show({q:"b",p:false,s:["bt","beyond","bbs","bbc","bobo组合","bb霜"]});
+
+        function jsonp(url, params, cb) { 
+            // console.log(params);
+            return new Promise((resolve, reject) => {
+                // 这个过程不会默认执行, 需要创建一个 script 标签
+                let script = document.createElement('script');
+
+                // 需要声明一个全局的函数用, cb 即是名字 show 
+                window[cb] = function(data) {  
+                    resolve(data);
+                    // 用完这个回调还得删掉, 干掉这个标签
+                    document.body.removeChild(script);
+                }
+                params = {...params, cb};   // 将 params 加入到对象中,最后应该是个这样的模式: wd=b&cb=show
+                let arrs = [];
+    
+                for(let key in params) {
+                    arrs.push(`${key}=${params[key]}`);
+                }
+                // 可以弄个链接, 去连接路径
+                script.src = `${url}?${arrs.join('&')}`;    // url + params + cb
+                // 最后 script 还没用, 给扔到页面去.
+                document.body.appendChild(script);
+            });
+        }
+        // 只能发送 get 请求, 不支持 post put delete
+        // 不安全 xss 攻击
+        jsonp({
+            // url: 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+            url: 'https://localhost:3000/say',      // 后端中用
+            // params:{wd: 'b'},
+            params:{wd: 'Hello World'},   // 后端中用
+            cb: 'show',
+        }).then(data => {   // then 成功后, 将结果 console 出来, 能 then, 可以返回一个 Promise
+            console.log(data);
+        })
+    </script>
+    <!-- <script src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=b&cb=show"></script> -->
+</body>
+</html>

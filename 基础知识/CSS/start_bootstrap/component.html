@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css">
+    <script src="./bootstrap-3.3.7/js/jquery-3.3.1.min.js"></script>
+
+    <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 1.role -->
+    <!-- 2.aria-label -->
+    <!-- 3.tablndex -->
+    <!-- 4.data- -->
+
+    <!-- 使用 1、glyphicon   2、glyphicon-star -->
+    <button class="btn btn-default">
+        <span class="glyphicon glyphicon-star">这是一个按钮！</span>
+    </button>
+
+    <hr>
+    <!-- 下拉菜单 -->
+    <!-- 1、.dropdown 控制组件为下拉 -->
+    <!-- 2、.dropdown-menu-right 代替 .pull-right 右对齐 -->
+    <!-- 3、divider  分割线 -->
+    <div class="dropdown">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            按钮
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+            <li><a href="https://v.qq.com/">腾讯视频</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown trigger
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+            ...
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- 控件组 -->
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+    </div>
+
+    <hr>
+    <!-- 导航栏 -->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+        <li><a href="https://v.qq.com/">腾讯视频</a></li>
+        <li><a href="https://www.youku.com/">优酷视频</a></li>
+    </ul>
+    <ul class="nav nav-pills">
+        <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+        <li><a href="https://v.qq.com/">腾讯视频</a></li>
+        <li><a href="https://www.youku.com/">优酷视频</a></li>
+    </ul>
+    <!-- 垂直的导航栏 -->
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+        <li><a href="https://v.qq.com/">腾讯视频</a></li>
+        <li><a href="https://www.youku.com/">优酷视频</a></li>
+    </ul>
+
+    <hr>
+    <!-- 分页: pagination -->
+    <nav>
+        <ul class="pagination">
+            <li class="active"><a href="https://www.youku.com/">优酷视频</a></li>
+            <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+            <li><a href="https://v.qq.com/">腾讯视频</a></li>
+        </ul>
+        <ul class="pager">
+            <li><a href="#">向左</a></li>
+            <li><a href="#">向右</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <!-- 分页 -->
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 60%">
+            60%
+        </div>
+    </div>
+
+    <hr>
+    <!-- 列表 -->
+    <ul class="list-group">
+        <li class="list-group-item active"> 这是一个列表<span class="badge">14</span></li>
+        <li class="list-group-item disabled"> 这是一个列表<span class="badge">14</span></li>
+        <li class="list-group-item list-group-item-danger"> 这是一个列表<span class="badge">14</span></li>
+        <li class="list-group-item list-group-item-warning"> 这是一个列表<span class="badge">14</span></li>
+        <li class="list-group-item list-group-item-success"> 这是一个列表<span class="badge">14</span></li>
+    </ul>
+
+    <hr>
+    <!-- 面板: 经常用弹窗和提示信息 -->
+    <div class="panel panel-default">
+        <div class="panel panel-heading">
+            menu 
+        </div>
+        <div class="panel-body">面本的内容</div>
+        <div class="panel-footer">脚注</div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
