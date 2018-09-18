@@ -1,0 +1,84 @@
+/* 给 p 属性上色 */
+p {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: cyan;
+}
+
+p:nth-child(1) {
+    width: 150px;
+    font-size: 18px;
+}
+
+p:nth-child(2) {
+    width: 250px;
+    font-size: 24px;
+}
+
+p:nth-child(3) {
+    width: 350px;
+    font-size: 30px;
+}
+
+div .boxes {
+    margin: 10px;
+    font-size: 200%;
+    color: white;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.boxes:nth-child(1) {
+    background-color: red;
+    width: 650px;
+}
+
+.boxes:nth-child(2) {
+    background-color: blue;
+    width: 75%;
+}
+
+/* length 练习 */
+.outer {
+    width: 100%;
+    height: 10em;
+    background-color: red;
+}
+
+.inner {
+    width: 550px;
+    height: 10em;
+    background-color: blue;
+}
+
+
+/* 颜色练习 */
+.first {
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 100px;
+}
+
+.second {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    top: -150px;
+    left: 125px;
+}
+
+.third {
+    background-color: fuchsia;
+    width: 200px;
+    height: 300px;
+    top: -375px;
+    left: 250px;
+}
+
+/* 好好的把各个属性和属性的值注释掉思考下它们之间的关系 */
+.first, .second, .third{
+    position: relative;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+        <ol>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>ccc</li>
+        </ol>
+    </ul>
+
+
+
+    <script>
+        // 入口函数
+        $(function() {
+            // 获取 ul 中 li 设置颜色
+            // 获取后代元素
+            var li = $("ul li");
+            li.css("margin", 5);
+            li.css("background", "red");
+
+            // 获取子代元素
+            var ulLi = $("ul>li");
+            ulLi.css("background", "yellow");
+        });
+    </script>
+
+    <script>
+        
+        // 基本属性顾虑器
+        $(document).ready(function() {  
+            // :odd
+            $("li:odd").css("background", "blue");
+
+            // :even
+            $("li:even").css("background", "green");
+
+            // 
+        });
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/* general styles */
+body {
+    margin: 0;
+}
+
+#wrapper>* {
+    padding: 20px;
+    font-size: 20px;
+    border: 20px solid rgba(0, 0, 0, 0.5);
+}
+
+/* specific boxes */
+#wrapper header,
+#wrapper footer {
+    background-color: blueviolet;
+    color: white;
+}
+
+#wrapper main {
+    background-color: yellow;
+    margin: 2%;
+    padding: 2%;
+    border: 60px solid rgba(0, 0, 0, 0.5);
+    width: 60%;
+}
+
+#wrapper header {}
+
+#wrapper footer {
+    margin-top: 20px;
+}
+
+
+/* overflow */
+/* 使用 p 显示 overflow 的三个属性 */
+p {
+    width: 400px;
+    height: 2.5em;
+    padding: 1em 1em 1em 1em;
+    border: 1px solid black;
+}
+
+.autoscroll {
+    overflow: auto;
+}
+
+.clipped {
+    overflow: hidden;
+}
+
+.default {
+    overflow: visible;
+}
+

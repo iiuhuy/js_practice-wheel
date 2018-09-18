@@ -1,0 +1,51 @@
+#winning {
+    background-color: red;
+    border: 1px solid black;
+}
+
+/* 去掉  !important 看看效果 */
+.better {
+    background-color: gray;
+    border: none !important;
+    /* 不建议使用, 改变了优先级, 使叠层改变了正常的工作模式 */
+}
+
+p {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+/* 专用性 */
+#outer a {
+    background-color: red;
+}
+
+#outer #inner a {
+    background-color: blue;
+}
+
+#outer div ul li a {
+    color: yellow;
+}
+
+#outer div ul .nav a {
+    color: white;
+}
+
+/* 练习叠层 */
+#outer1 #inner1 a {
+    background-color: initial;
+    color: red;
+}
+
+#outer div ul .nav a {
+    background-color: blue;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div div li a {
+    color: yellow;
+}

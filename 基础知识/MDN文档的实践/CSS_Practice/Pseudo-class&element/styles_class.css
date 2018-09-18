@@ -1,0 +1,29 @@
+/* 添加条纹的信息列表 */
+ul {
+    padding: 0;
+}
+
+li {
+    padding: 3px;
+    margin-bottom: 5px;
+    list-style-position: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 当鼠标悬停的时候, 会显示红色的下划线 */
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+li:nth-of-type(2n) {
+    background-color: #ccc; 
+}
+
+li:nth-of-type(2n+1) {
+    background-color: #eee;
+}

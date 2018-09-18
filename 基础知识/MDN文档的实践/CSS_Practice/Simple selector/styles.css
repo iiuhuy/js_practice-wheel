@@ -1,0 +1,67 @@
+/* h1, p, ul, li{
+    color: red;
+    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,1));
+    padding: 3px;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.first {
+    font-weight: bold;
+
+}
+
+.done {
+    text-decoration: line-through;
+} */
+
+/* 处理多个类 */
+.base-box {
+    background-image: linear-gradient(to bottom, rgab(0,0,0,0.1), rgba(0,0,0,0.3));
+    padding: 3px 3px 3px 7px;
+} *yanse/
+
+.important {
+    font-weight: bold;
+}
+
+.editor-note {
+    background-color: #9999FF;
+    border-left: 6px solid #333399;
+}
+
+.warning {
+    background-color: #ff9999;
+    border-left: 6px solid #993333;
+    
+}
+
+/* 更改段落上的类属性 */
+#polite {
+    font-family: cursive;
+
+}
+
+#rude {
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+/* 依据不同的 id 分配后胜者的颜色 */
+p {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+#first_1 {
+    background-color: goldenrod;
+}
+
+#second_2 {
+    background-color: silver;
+}
+
+#third_3 {
+    background-color: #CD7F32;
+}

@@ -1,0 +1,82 @@
+/* 所有具有 "data-vegetable"属性的元素将被应用紫色的文本颜色 */
+[data-vegetable] {
+    color: blueviolet;
+}
+
+/* 所有具有"data-vegetable"属性且属性值刚好为"liquid"的元素将被应用金色的背景颜色 */
+[data-vegetable="liquid"] {
+    background-color: goldenrod;
+}
+
+/* 所有具有"data-vegetable"属性且属性值包含"spicy"的元素，
+即使元素的属性中还包含其他属性值，都会被应用红色的文本颜色 */
+[data-vegetable~="spicy"]{
+    color: red;
+}
+
+
+/* 语言选择的经典用法 */
+[lang |= "fr"] {
+    font-weight: bold;
+}
+
+/* 具有 'data-vegetable' 属性含有值 'not spicy' 所有元素, 都变回绿色 */
+[data-vegetable*="not spicy"] {
+    color: green;
+}
+
+/* 具有"data-quantity"属性其值以"kg"结尾的所有元素 */
+[data-quantity$="kg"] {
+    font-weight: bold;
+}
+
+/* 具有属性"data-quantity"其值以"optional"开头的所有元素 */
+[data-quantity^="optional"] {
+    opacity: 0.5;
+}
+
+
+/* 给足球添加比赛结果添加样式 */
+li[lang="en-GB"] {
+    background: url("http://mdn.github.io/learning-area/css/introduction-to-css/css-selectors/en-GB.png") 5px center no-repeat;
+}
+
+li[lang="de"] {
+    background: url("http://mdn.github.io/learning-area/css/introduction-to-css/css-selectors/de.png") 5px center no-repeat;
+}
+
+li[lang="es"] {
+    background: url("http://mdn.github.io/learning-area/css/introduction-to-css/css-selectors/es.png") 5px center no-repeat;
+}
+
+li[data-perf*="inc"] {
+    background-color: rgba(0,255,0,0.7);
+}
+
+li[data-perf*="same"] {
+    background-color: rgba(0,0,255,0.5);
+}
+
+li[data-perf*="dec"] {
+    background-color: rgba(255,0,0,0.7);
+}
+
+li[data-perf*="pro"] {
+    font-weight: bold;
+}
+
+li[data-perf*="rel"] {
+    font-style: italic;
+    color: #666;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    padding: 3px 3px 3px 34px;
+    margin-bottom: 5px;
+    list-style-position: inside;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    我的食谱配料: <i lang="fr-FR">Poulet basquaise</i>
+    <ul>
+        <li data-quantity="1kg" data-vegetable>Tomatoes</li>
+        <li data-quantity="3" data-vegetable>Onions</li>
+        <li data-quantity="3" data-vegetable>Garlic</li>
+        <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
+        <li data-quantity="2kg" data-meat>Chicken</li>
+        <li data-quantity="optional 150g" data-meat>Bacon bits</li>
+        <li data-quantity="optional 10ml" data-vegetable="liquid">Olive oil</li>
+        <li data-quantity="25cl" data-vegetable="liquid">White wine</li>
+    </ul>
+
+    <hr>
+
+    <!-- 给足球比赛结果添加样式 -->
+    <!-- 1.前三个规则分别在列表项的左侧添加英国，德国和西班牙国旗图标。 
+           需要填写适当的属性选择器，以便团队获得正确的国家标志，并配合语言。 -->
+    <!-- 2.规则 4-6 在列表项中添加背景颜色，以指示球队是否已经在联盟中升格（绿色，rgba（0,255,0,0.7）），
+           向下（红色，rgba（255,0,0,0.5）） ），或者留在同一个地方（蓝色，rgba（0,0,255,0.5））。
+           填写适当的属性选择器，以将正确的颜色与正确的队列匹配，并与 inc，相同和 dec 字符串匹配 data-perf 属性值。 -->
+    <!-- 3.规则 7-8 使得晋级的球队变得加粗，有降级危险的球队为斜体和灰色。 
+           填写适当的属性选择器，将这些样式与正确的队列进行匹配，
+           并与 data-perf 属性值中显示的 pro 和 rel 字符串进行匹配。 -->
+    <ol>
+        <li lang="en-GB" data-perf="inc-pro">Manchester United</li>
+        <li lang="es" data-perf="same-pro">Barcelona</li>
+        <li lang="de" data-perf="dec">Bayern Munich</li>
+        <li lang="es" data-perf="same">Real Madrid</li>
+        <li lang="de" data-perf="inc-rel">Borussia Dortmund</li>
+        <li lang="en-GB" data-perf="dec-rel">Southampton FC</li>
+    </ol>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

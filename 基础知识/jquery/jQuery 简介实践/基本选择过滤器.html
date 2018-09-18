@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+        <ol>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>ccc</li>
+        </ol>
+    </ul>
+
+
+    <script>
+        // 基本属性顾虑器
+        $(document).ready(function () {
+            // :odd
+            $("li:odd").css("background", "blue");
+
+            // :even
+            $("li:even").css("background", "green");
+
+            // 
+        });
+    </script>
+</body>
+
+</html>

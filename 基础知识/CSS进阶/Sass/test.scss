@@ -1,0 +1,10 @@
+@charset "utf-8";//必须设置了这个才能编译有中文的注释
+$fontSize: 12px;
+body{
+    font-size:$fontSize;
+}
+/* 测试注释 */
+$side : left;
+　.rounded {
+　　　border-#{$side}-radius: 5px;
+}

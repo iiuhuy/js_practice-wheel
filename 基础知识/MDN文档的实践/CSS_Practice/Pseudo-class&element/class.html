@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles_class.css">
+    <!-- <style>
+        /* 这些样式将在任何情况下应用于链接 */
+        a {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* 让被访问过的链接和未被访问的链接看起来一样 */
+        a:visited {
+            color: blue;
+        }
+
+        /* 当光标悬停于链接，键盘激活或锁定链接时，我们让链接呈现高亮 */
+        a:hover,
+        a:active,
+        a:focus {
+            color: darkred;
+            text-decoration: none;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- 一个伪类的例子 -->
+    <a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>
+
+    <!-- 一个条纹的信息列表 -->
+    <!-- 1.使用伪类实现悬停样式? hover  -->
+    <!-- 2.对于条纹状效果，你需要用到一个伪类，如:nth-of-type()，
+           通过给那两个颜色规则添加稍微不同的伪类，使得列表的奇数行和偶数行有着不同的样式效果。 -->
+    <ul>
+        <li><a href="#">United Kingdom</a></li>
+        <li><a href="#">Germany</a></li>
+        <li><a href="#">Finland</a></li>
+        <li><a href="#">Russia</a></li>
+        <li><a href="#">Spain</a></li>
+        <li><a href="#">Poland</a></li>
+    </ul>
+
+</body>
+
+</html>

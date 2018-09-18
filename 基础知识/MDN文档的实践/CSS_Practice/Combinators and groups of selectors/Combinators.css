@@ -1,0 +1,84 @@
+/* 基本的 table 样式 */
+table {
+    font: 1em sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 所有在table里的td以及th，这里的逗号不是一个组合器，
+   它只是允许你把几个选择器对应到相同的CSS规则上.*/
+table td,table th {
+    border: 1px solid black;
+    padding: 0.5em 0.5em 0.4em;
+}
+
+/* 所有 table 里的 thead 里的所有 th*/
+table thead th {
+    color: white;
+    background: black;
+}
+
+/* 所有 table 里的 tbody 里的所有 td（第一个除外），每个 td 都是由它上边的 td 选择 */
+table tbody td + td {
+    text-align: center;
+}
+
+/* table 里所有的 tbody 里的 td 当中的最后一个 */
+table tbody td:last-child {
+    text-align: right;
+}
+
+/* 所有table里的tfoot里的th */
+table tfoot th {
+    text-align: center;
+    border-top-width: 5px;
+    border-left: none;
+    border-bottom: none;
+}
+
+/* 在 table 当中, 所有的 th 之后的 td */
+table th + td {
+    text-align: right;
+    border-top-width: 5px;
+    color: white;
+    background: black;
+}
+
+/* 定位在 with-currency 类中拥有属性 lang 并且这个属性值为en-US的元素中的，
+   最后 td(:last-child) 节点的前面（::before）*/
+.with-currency[lang="en-US"] td:last-child::before {
+    content: '$';
+}
+
+/* 定位在 with-currency 类中拥有属性 lang 并且这个属性值为 fr 的元素中的，
+   最后 td(:last-child) 节点的后面（::after） */
+.with-currency[lang="fr"] td:last-child::after {
+    content: " €";
+}
+
+
+/* 实践 */
+ul {
+    padding: 0%;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: red;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* 当鼠标停留在上面时有效 */
+ul a:hover {
+    color: red;
+    background-color: slateblue;
+}
+
+h1 + p {
+    font-style: bold;
+    color: blue;
+}

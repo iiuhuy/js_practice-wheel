@@ -1,0 +1,19 @@
+/* 所有含有"href"属性并且值以"http"开始的元素，将会在其内容后增加一个箭头（去表明它是外部链接）*/
+
+[href^=http]::after {
+    content: '⤴ ↑ ❀';
+}
+
+p::first-line {
+    font-size: 3em;
+}
+
+p::first-letter {
+    font-size: 3em;
+    border: 1px solid black;
+    background-color: red;
+    display: block;
+    float: left;
+    padding: 2px;
+    margin-right: 4px;
+}

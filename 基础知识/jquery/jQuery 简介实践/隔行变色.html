@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    
+    <ul>
+        <li>星期一</li>
+        <li>星期二</li>
+        <li>星期三</li>
+        <li>星期四</li>
+        <li>星期五</li>
+        <li>星期六</li>
+        <li>星期日</li>
+    </ul>
+
+    <!-- 操作标签选择器 -->
+    <div></div>
+    <div class="box"></div>
+    <div id="box"></div>
+    <div class="box"></div>
+    <div></div>
+    
+    
+    
+    
+    
+    <script>
+        // 入口函数
+        jQuery(function() {
+            var li = $("li");
+            for (let i = 0; i < li.length; i++) {
+                if(i % 2 == 0) {
+                    // jquery 转换为 dom 对象
+                    li[i].style.background = "red";
+                } else {
+                    li[i].style.background = "yellow";
+                }
+            }
+        });  
+
+        // 操作标签选择器
+        // 入口函数
+        jQuery(document).ready(function() {
+            // 获取 jq 对象
+            var jqBox1 = $("#box");
+            var jqBox2 = $(".box");
+            var jqBox3 = $("div");
+
+            // 操作标签选择器
+            jqBox3.css("width", 100);
+            jqBox3.css("height", 100);
+            jqBox3.css("margin", 10);
+            jqBox3.css("background", "red");
+
+            // 隐式迭代
+            jqBox2.css("background", "yellow");
+
+            // 操作 id 选择器
+            jqBox1.css("background", "blue");
+        });
+    </script>
+</body>
+</html> 

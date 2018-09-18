@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>box_model</title>
+    <link rel="stylesheet" href="./box_model.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>Header!</header>
+        <main>Main content!</main>
+        <footer>Footer</footer>
+    </div>
+
+    <hr>
+    <h1>Overflow</h1>
+
+    <p class="autoscroll">
+        一个普通的网页基本都会包含 HTML，CSS 和 JS
+        三个关键的元素。这一点多年以来都是没有改变的，但是前端的开发模式已经发生了很大的变化。以往我们写的网页前端代码都是可以通过浏览器打开后能够直接运行的，但是现在对于大部分前端项目来说，我们写的代码其实并不是原生的
+        JS，HTML 和 CSS，而是基于它们扩展出来的更上层的语法。
+
+        本课程，我们将会大量编写 React 组件（实际上 antd 就是 Ant Design 的 React 组件的实现），这些组件需要通过编译为最终的 JS 和 CSS，然后引入到 HTML 网页中才能够被浏览器正确地执行。
+
+        由于存在一个编译过程，这就需要基于编译工具搭建一个项目的脚手架，使得我们可以通过工具实现代码的编译。通过编译后的代码才是浏览器能够执行的代码，这样我们才能进行项目的开发和最终的部署。
+    </p>
+
+    <p class="clipped">
+        前端开发不只涉及到 JS，同时还有 CSS、HTML、图片等资源，以及其他一些文件类型。比如：LESS 脚本可以提高 CSS 的编写效率，TypeScript
+        可以让你以一种全新的语法去编写你的逻辑。所有这些文件类型，都被纳入了前端研发体系。大部分编译工具都能够处理这些不同类型的资源文件。
+
+        开源社区的繁荣，一方面让我们可以有很多工具，但是同时也让项目初始化变得繁琐。
+
+        本课程选择使用 umi 作为编译工具。其实 umi 不仅仅是一个编译工具，它同时也是一个前端框架。它对社区的 webpack，react-router 等进行的封装，使得我们可以基于它快速搭建一个 React 项目。
+
+        umi 有各种类型的脚手架，方便你快速启动项目。本课程为了让读者能够更好地理解 umi 背后的逻辑，将从零开始初始化一个能够运行的脚手架。
+
+        下面，请大家跟着一起操作，完成之后将会得到一个最简单的应用：网页显示 hello world。
+    </p>
+
+    <p class="default">
+        使用 Ant Design 组件
+        通过前面的学习，你应该已经搭建完成了脚手架，并且了解了 React 的基本概念。这一节，我们就来教大家如何使用 Ant Design 组件库，完成一个卡片组件（card）。
+
+
+
+        引入 antd
+        Ant Design 是一个服务于企业级产品的设计体系，组件库是它的 React 实现，antd 被发布为一个 npm 包方便开发者安装并使用。
+
+        在 umi 中，你可以通过在插件集 umi-plugin-react 中配置 antd 打开 antd 插件，antd 插件会帮你引入 antd 并实现按需编译。
+    </p>
+
+
+
+
+
+</body>
+
+</html>

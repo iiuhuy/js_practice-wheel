@@ -1,0 +1,18 @@
+h1{
+    color: red;
+    background: yellow;
+    border: 1px solid black;
+}
+
+p{
+    color: red;
+}
+
+li{
+    text-shadow: 2px 2px 3px purple;
+}
+
+span{
+    border: 1px solid black;
+    background: lime;
+}
