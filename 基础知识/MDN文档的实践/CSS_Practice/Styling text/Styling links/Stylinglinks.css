@@ -1,0 +1,65 @@
+body {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+p {
+    /* font-size: 2rem;
+    text-align: center; */
+    line-height: 1.4;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+/* 未访问过 */
+a:link {
+    color: blue;
+}
+
+/* 访问过后 */
+a:visited {
+    color: #437A16;
+}
+
+/* 选中 */
+/* border-bottom 下划线  */
+a:focus， a:hover {
+    border-bottom: 1px solid;
+    background: #BAE498;    
+}
+
+/* 悬停 */
+/* a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+} */
+
+/* 当链接被激活时 */
+a:active {
+    /* background: #265301; */
+    color: red;
+}
+
+/* 在外部链接插入自定义背景图片 */
+/* "http" 文本应该只出现在外部链接 */
+a[href*="http"] {
+    background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
+
+/* ul {
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    display: inline
+} */

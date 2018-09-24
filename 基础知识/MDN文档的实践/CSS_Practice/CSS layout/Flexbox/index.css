@@ -1,0 +1,52 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: purple;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+/* flexbox 弹性盒子 */
+section {
+    /* 给 <section>（变成了 flex 容器）设置 display */
+    /* 这个时候就成了 三列布局的样子啦 */
+    display: flex;
+    /* 如果设置行内元素为 flexible box ， 也可以设置 display 为 inline-flex */
+    /* display: inline-flex; */
+
+    /* flex-direction 默认 row */
+    flex-direction: row;
+    /* row-reverse 只是每一行的循序和原来的是相反的 */
+    /* flex-direction: row-reverse; */
+
+    /* flex 元素 被打断到多个行中。cross-start 会根据 flex-direction 的值选择
+       等于 start 或 before。cross-end 为确定的 cross-start 的另一端。 */
+    flex-wrap: wrap;
+
+    /* flex-flow: 就是上面两个的缩写 */
+    /* flex-flow: row wrap; */
+}
+
+
+article {
+    flex: 200px;
+}
+

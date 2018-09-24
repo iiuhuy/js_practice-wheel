@@ -1,0 +1,61 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: purple;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+/* Add your flexbox CSS below here */
+/* 设置 <section> 的子节点布局为 flexible box */
+section {
+    display: flex;
+}
+
+article {
+    flex: 1 200px;
+}
+
+/* 设置第三个 <article> 元素的子节点的布局同样为 flex ，但是属性值为列布局 */
+article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+}
+
+article:nth-of-type(3) div:first-child {
+    /* 高度 */
+    flex: 1 100px;
+    /* 设置它的子节点（<button> 元素）为 flex 项 */
+    display: flex;
+    /* 居中对齐 */
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* 给按钮设置大小 */
+button {
+    flex: 1;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+} 

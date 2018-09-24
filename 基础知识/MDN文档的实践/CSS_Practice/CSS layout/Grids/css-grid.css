@@ -1,0 +1,72 @@
+.wrapper {
+    width: 90%;
+    /* max-width 为 960px */
+    max-width: 960px;
+    /* 居中 */
+    margin: 0 auto;
+    /* grid 网格类型 */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 设置网格间隔 */
+    grid-gap: 20px;
+}
+
+.col {
+    background: rgb(255, 150, 150);
+}
+
+.span6 {
+    grid-column: auto / span 6;
+}
+
+.span3 {
+    grid-column: auto / span 3;
+}
+
+.span2 {
+    grid-column: auto / span 2;
+}
+
+.span3 {
+    grid-column: auto / span 3;
+}
+
+.span4 {
+    grid-column: auto / span 4;
+}
+
+.span5 {
+    grid-column: auto / span 5;
+}
+
+.span6 {
+    grid-column: auto / span 6;
+}
+
+.span7 {
+    grid-column: auto / span 7;
+}
+
+.span8 {
+    grid-column: auto / span 8;
+}
+
+.span9 {
+    grid-column: auto / span 9;
+}
+
+.span10 {
+    grid-column: auto / span 10;
+}
+
+.span11 {
+    grid-column: auto / span 11;
+}
+
+.span12 {
+    grid-column: auto / span 12;
+}
+
+.content {
+    grid-column: 2 / 8;
+}

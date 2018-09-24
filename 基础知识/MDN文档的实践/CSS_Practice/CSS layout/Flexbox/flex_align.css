@@ -1,0 +1,43 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    width: 70%;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+button {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 15%;
+}
+
+div {
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* 这就垂直居中了,  */
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* align-self 属性覆盖 align-items 的行为 */
+/* button:first-child {
+    align-self: flex-end;
+} */
+
+/* 改变 flex 项的布局位置的功能, 而不影响到源顺序 */
+button:first-child {
+    order: 1;
+}
+
+/* 给 order 设置负值使它们比值为 0 的元素排得更前面。
+   设置 "Blush" 按钮排在主轴的最前面 */
+button:last-child {
+    order: -1;
+}

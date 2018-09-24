@@ -1,0 +1,18 @@
+/* Filter */
+p {
+    margin: 1rem auto;
+    padding: 20px;
+    width: 100px;
+    border: 5px dashed red;
+}
+
+.filter {
+    -webkit-filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.7));
+    /* drop-shadow 过滤器跟随着文本和 border dashes 的确切形状 */
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.7));
+}
+
+.box-shadow {
+    /* 盒阴影（box-shadow）仅仅跟随着盒的四方 */
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.7);
+}

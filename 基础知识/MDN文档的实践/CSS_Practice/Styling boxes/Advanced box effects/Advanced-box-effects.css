@@ -1,0 +1,58 @@
+p {
+    margin: 0;
+}
+
+article {
+    max-width: 500px;
+    padding: 10px;
+    background-color: red;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+}
+
+.simple {
+    /* box-shadow 四个属性值 
+        1.水平偏移量（horizontal offset ）
+            即向右的距离，阴影被从原始的框中偏移 (如果值为负的话则为左)
+        2.垂直偏移量（vertical offset）
+            即阴影从原始盒子中向下偏移的距离 (或向上，如果值为负)
+        3.模糊半径（blur radius）—— 在阴影中应用的模糊度
+        4.阴影的基本颜色（base color）
+     */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* 多个盒子阴影 */
+.multiple {
+    box-shadow:
+        1px 1px 1px black,
+        2px 2px 1px black,
+        3px 3px 1px red,
+        4px 4px 1px red,
+        5px 5px 1px black,
+        6px 6px 1px black;
+}
+
+/* 内部阴影 */
+button {
+    width: 150px;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #777, #ddd);
+    box-shadow: 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0, 0, 0, 0.3),
+        inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+button:focus,
+button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+}
+
+button:active {
+    box-shadow: inset 2px 2px 1px black,
+        inset 2px 3px 5px rgba(0, 0, 0, 0.3),
+        inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+}
+

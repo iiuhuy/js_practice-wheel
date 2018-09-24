@@ -1,0 +1,35 @@
+p {
+    font-family: sans-serif;
+    padding: 20px;
+    /* background properties */
+    background-color: yellow;
+}
+
+p {
+    font-family: sans-serif;
+    padding: 20px;
+    /* background properties */
+    background-color: yellow;
+    background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+    /* 图像不重复 */
+    background-repeat: no-repeat;
+    /* 放置背景图像位置 */
+    background-position: 99% center;
+    /* background-position: bottom center; */
+
+    /* 背景属性 */
+    /* background-color: yellow; */
+    /* background-image: linear-gradient(to bottom, yellow, #dddd00 50%, orange); */
+    /* background-image: repeating-linear-gradient(to right, yellow, orange 25px, yellow 50px); */
+    /* background: yellow linear-gradient(to bottom, yellow, #dddd00 50%, orange) no-repeat 99% center; */
+    /* 多个属性 */
+    background-color: yellow;
+    background: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png) no-repeat 99% center,
+                linear-gradient(to bottom, yellow, #dddd00 50%, orange);
+}
+
+div {
+    background-image: linear-gradient(to bottom, orange, yellow);
+}
+
+

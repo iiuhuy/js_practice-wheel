@@ -1,0 +1,32 @@
+html {
+    font-family: sans-serif;
+}
+
+section {
+    width: 93%;
+    height: 240px;
+    margin: 20px auto;
+    background: purple;
+
+    display: flex;
+}
+
+div {
+    color: white;
+    background: orange;
+    /* 在行中获得相同数量的空间 */
+    flex: 1;
+    /* 设置与元素相关联的盒子模型的右外边距 */
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+div:last-child {
+    margin-right: 0;
+}
+
+/* 加上 border 和 padding */
+section, div {
+  border: 5px solid rgba(0,0,0,0.85);
+  padding: 10px;
+}

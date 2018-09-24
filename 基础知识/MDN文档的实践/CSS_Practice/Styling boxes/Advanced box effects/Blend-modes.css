@@ -1,0 +1,52 @@
+div {
+    width: 250px;
+    height: 130px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background: url(https://mdn.mozillademos.org/files/13090/colorful-heart.png) no-repeat center 20px;
+        background-color: green;
+}
+
+.multiply {
+    /* background-blend-mode, 用来将单个元素的多重背景图片和背景颜色设置混合在一起。 */
+    background-blend-mode: multiply;
+}
+
+/* mix-blend-mode, 用来将一个元素与它覆盖的那些元素各自所设置的背景
+  （background）和内容 (content) 混合在一起 */
+article {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+div {
+    width: 250px;
+    height: 130px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article div:first-child {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url(https://mdn.mozillademos.org/files/13090/colorful-heart.png) no-repeat center 20px;
+    background-color: green;
+}
+
+article div:last-child {
+    background-color: purple;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+}
+
+.multiply-mix {
+    /* 多层混合（mix-blend）不仅混合了两种背景图像，还混合了在<div>下面的颜色 */
+    mix-blend-mode: multiply;
+}

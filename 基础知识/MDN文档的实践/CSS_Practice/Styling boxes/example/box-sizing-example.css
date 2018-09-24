@@ -1,0 +1,20 @@
+html {
+    font-family: sans-serif;
+    background: #ccc;
+}
+
+/* 第一个框的宽度和高度等于 content + padding + border */
+.one, .two {
+    background: red;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 20px auto;
+}
+
+/* 第二个框的宽度和高度等于通过 CSS 设置在 content 的宽度和高度。 
+   padding 和 border 并没有添加到总宽度和高度上 */
+.two {
+    box-sizing: border-box;
+}

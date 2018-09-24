@@ -1,0 +1,39 @@
+label[for="toggle"] {
+    /* 是图标更大 */
+    font-size: 3rem;
+    /* 位于右上角 */
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    /* 当信息面板被赋予样式和显示的时候，不会覆盖面板 */
+    z-index: 1;
+    /* 改变鼠标指针 */
+    cursor: pointer;
+}
+  
+input[type="checkbox"] {
+    position: absolute;
+    top: -100px;
+}
+
+/* 设置面板样式 */
+aside {
+    background-color: #a60000;
+    color: white;
+  
+    width: 340px;
+    height: 98%;
+    padding: 10px 1%;
+    /* 使页面的内容在滚动 */
+    position: fixed;
+    top: 0;
+    right: -370px;
+    /* 在状态改变的时候平滑的过渡 */
+    transition: 0.6s all;
+}
+
+input[type=checkbox]:checked + aside {
+    /* 将 <aside> 的 right 属性设置为 0px，
+       会造成面板再次出现在屏幕上（由于过渡属性会平滑的出现）。 */
+    right: 0px;
+}
