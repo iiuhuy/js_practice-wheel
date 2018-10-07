@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Example</title>
+
+</head>
+
+<body>
+    <a href="http://www.example.com/" class="popup">Example</a>
+
+    <!-- 这里最好是分开文件 -->
+    <script type="text/JavaScript">
+        window.onload = function() {
+            if (!document.getElementsByTagName) return false;
+            var links = document.getElementsByTagName("a");
+            for(var i = 0; i < links.length; i++) {
+                if(links[i].getAttribute("class")=="popup") {
+                    links[i].onclick = function() {
+                        popUp(this.getAttribute("href"));
+                        return false;
+                    }
+                }
+            }
+        }
+
+        function popUp(winURL) {
+            window.open(winURL,"popup","width=320,height=480");
+        }
+    </script>
+</body>
+
+</html>

@@ -125,4 +125,20 @@ ECharts 中的做法就是会计算出它每个标签的宽度, 看看标签标�
 下面通过源码的方式来了解下, 通过笔记①中安装的 ECharts 来查看, 在`ECharts_Practice/incubator-echarts/src/model/Model.js` 中找到一个 get 方法.
 
 > 作业: 再次看配置项手册, 它是个树状的结构。 如果能仔细看它的每个配置项就最好。
- 
+
+# ECharts 学习笔记③
+- 本期解决 issue: https://github.com/apache/incubator-echarts/issues/6735
+- commit: https://github.com/ecomfe/echarts-doc/commit/09c6726262b4e4e80d9fb2c8ef97784bc3711605
+- 作业：浏览 https://github.com/apache/incubator-echarts/projects/3 ，了解每个 issue 大致是什么问题。
+
+
+课程总结:
+- 不要被 渐进式渲染、视觉隐射，等给吓到了，可能需要该的部分真的很小, 跟着羡辙&钰猫一起 debug 的方法, 学习怎么去解决遇到的问题。
+
+- 热力图动画关不掉(视频中遇到的问题)。
+
+    引起这个问题的主要原因是因为数据量较大的时候会默认开启渐进式渲染，而不是 “动画(animation)”。
+    
+    热力图默认会在数据量大于 3000 的情况下开启渐进式渲染，这个值可以通过 `series.progressiveThreshold` 修改；每次渲染 400 个，这个值可以通过 `series.progressive` 修改。之前文档漏了这部分的说明，已在上面的 commit 中修复。
+    
+    因此，对于这个例子而言，如果不希望出现所谓的 “动画”，可以通过将 `series.progressiveThreshold` 设大一点，比如例子中数据有 20000 个点，如果 `series.progressiveThreshold` 大于这个值将会一下子渲染出结果了。但是实际上会由于数据量较大，有几秒的白屏时间，体验上有些损失。出于用户体验的考虑，建议保留渐进式渲染的结果。
