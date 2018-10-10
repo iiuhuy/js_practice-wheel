@@ -1,0 +1,52 @@
+p {
+    padding: 10px;
+    background: yellow;
+    border: 2px solid red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+div {
+    width: 220px;
+    padding: 20px;
+    margin: 10px;
+    line-height: 2;
+    background-color: yellow;
+    text-align: center;
+    display: inline-block;
+    /* border-radius 圆角 IE9 以上支持 */
+    border-radius: 20px;
+    /* border-image:  */
+    border: 20px solid black;
+    background-clip: padding-box;
+    border-image-source: url(https://mdn.mozillademos.org/files/13060/border-image.png);
+    border-image-slice: 40;
+    border-image-repeat: round;
+}
+
+.complete {
+    border-style: solid;
+}
+
+.written {
+    border-style: dashed;
+}
+
+.incomplete {
+    border-style: dotted;
+}
+
+.writing,
+.review {
+    border-bottom: 6px solid red;
+}
+
+/* 现在理解了边界（border）
+   它的意思不是国家的国界线而是元素的边界线。
+   理解边界是很有用的，并且有许多不同的用途 */

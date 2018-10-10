@@ -1,0 +1,25 @@
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}   
+
+p {
+    /* 行高 */
+    line-height: 2;
+    /* 字间距 */
+    word-spacing: 0.1rem;
+}
+
+/* 浮动元素 (这个例子中的 <img> 元素) 会脱离正常的文档布局流，
+   并吸附到其父容器的左边 (这个例子中的 <body>元素)。
+   在正常布局中位于该浮动元素之下的内容，此时会围绕着浮动元素，填满其右侧的空间。 */
+img {
+    /* float: left; */
+    /* 设置与元素相关联的盒子模型的右外边距 */
+    /* margin-right: 30px; */
+
+    /* float-right 也是一样, 只是相反 */
+    float: right;
+    margin-left: 30px;
+}

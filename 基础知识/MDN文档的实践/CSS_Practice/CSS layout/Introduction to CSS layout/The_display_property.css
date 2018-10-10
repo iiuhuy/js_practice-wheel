@@ -1,0 +1,64 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+p {
+    background: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    background: red;
+    border: 1px solid black;
+} 
+
+.positioned {
+    /* 相对定位 */
+    position: relative;
+    /* 绝对定位 */
+    /* position: absolute; */
+
+    background: yellow;
+    top: 30px;
+    left: 30px;
+}   
+
+html {
+    font-family: sans-serif;
+}
+
+form {
+    display: table;
+    margin: 0 auto;
+}
+
+form div {
+    display: table-row;
+}
+
+/* 对齐 */
+form label, form input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+form label {
+    width: 200px;
+    padding-right: 5%;
+    text-align: right;
+}
+
+form input {
+    width: 300px;
+}
+
+form p {
+    display: table-caption;
+    caption-side: bottom;
+    width: 300px;
+    color: #999;
+    font-style: italic;
+}

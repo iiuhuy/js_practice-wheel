@@ -1,0 +1,168 @@
+* {
+    /* 用于更改用于计算元素宽度和高度的默认的 CSS 盒子模型 */
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 980px; */
+    width: 90%;
+    /* 放置布局变得太宽 */
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    /* padding-right: 20px; */
+    padding-right: 2.083333333%;
+}
+
+/* 没一行的行容器在另一行清除 */
+.row {
+    clear: both;
+}
+
+/* 计算每列的列和列之间沟槽的宽度: 960-12x20px (20px 是每列之间的沟槽宽度) 720/12=60px */
+.col {
+    float: left;
+    /* 同下面, 20/960=0.02083333333*/
+    /* margin-left: 20px; */
+    margin-left: 2.083333333%;
+    /* width: 60px; */
+    /* 根据 target/context = result 计算出列宽的百分比: 60/960=0.0625 */
+    width: 6.25%;
+    background: rgb(255, 150, 150);
+}
+
+/* .col.span2 {
+    width: 140px;
+}
+
+.col.span3 {
+    width: 220px;
+}
+
+.col.span4 {
+    width: 300px;
+}
+
+.col.span5 {
+    width: 380px;
+}
+
+.col.span6 {
+    width: 460px;
+}
+
+.col.span7 {
+    width: 540px;
+}
+
+.col.span8 {
+    width: 620px;
+}
+
+.col.span9 {
+    width: 700px;
+}
+
+.col.span10 {
+    width: 780px;
+}
+
+.col.span11 {
+    width: 860px;
+}
+
+.col.span12 {
+    width: 940px;
+} */
+
+/* 转换成百分比 */
+/* .col.span2 {
+    width: 14.58333333%;
+}
+
+.col.span3 {
+    width: 22.91666666%;
+}
+
+.col.span4 {
+    width: 31.24999999%;
+}
+
+.col.span5 {
+    width: 39.58333332%;
+}
+
+.col.span6 {
+    width: 47.91666665%;
+}
+
+.col.span7 {
+    width: 56.24999998%;
+}
+
+.col.span8 {
+    width: 64.58333331%;
+}
+
+.col.span9 {
+    width: 72.91666664%;
+}
+
+.col.span10 {
+    width: 81.24999997%;
+}
+
+.col.span11 {
+    width: 89.5833333%;
+}
+
+.col.span12 {
+    width: 97.91666663%;
+} */
+
+/* 使用 calc 函数计算 */
+.col.span2 {
+    width: calc((6.25%*2) + 2.08333333%);
+}
+
+.col.span3 {
+    width: calc((6.25%*3) + (2.08333333%*2));
+}
+
+.col.span4 {
+    width: calc((6.25%*4) + (2.08333333%*3));
+}
+
+.col.span5 {
+    width: calc((6.25%*5) + (2.08333333%*4));
+}
+
+.col.span6 {
+    width: calc((6.25%*6) + (2.08333333%*5));
+}
+
+.col.span7 {
+    width: calc((6.25%*7) + (2.08333333%*6));
+}
+
+.col.span8 {
+    width: calc((6.25%*8) + (2.08333333%*7));
+}
+
+.col.span9 {
+    width: calc((6.25%*9) + (2.08333333%*8));
+}
+
+.col.span10 {
+    width: calc((6.25%*10) + (2.08333333%*9));
+}
+
+.col.span11 {
+    width: calc((6.25%*11) + (2.08333333%*10));
+}
+
+.col.span12 {
+    width: calc((6.25%*12) + (2.08333333%*11));
+}

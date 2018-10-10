@@ -1,0 +1,50 @@
+/* background-clip */
+div {
+    width: 60px;
+    height: 60px;
+    border: 20px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+
+    background-size: 140px;
+    background-position: center;
+    background-image: url('https://mdn.mozillademos.org/files/11947/ff-logo.png');
+    background-color: gold;
+}
+
+.default {
+    background-clip: border-box;
+}
+
+.padding-box {
+    background-clip: padding-box;
+}
+
+.content-box {
+    background-clip: content-box;
+}
+
+/* 框类型 */
+p {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+span {
+    padding: 0.5em;
+    border: 1px solid green;
+
+    background-color: yellowgreen;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}

@@ -1,0 +1,90 @@
+html {
+    font-family: sans-serif;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+}
+
+.info-box {
+    width: 450px;
+    height: 400px;
+    /* margin: 0 auto 水平居中 */
+    /* margin: 0 auto; */
+    position: fixed;
+    top: 0;
+}
+
+/* 样式化选项卡 */
+.info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.info-box li {
+    float: left;
+    list-style-type: none;
+    width: 150px;
+}
+  
+.info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
+
+.info-box li a:focus, .info-box li a:hover {
+    background-color: rgb(0, 255, 213);
+    color: white;
+}
+  
+.info-box li a.active {
+    background-color: rgb(0, 255, 213);
+    color: white;
+}
+
+/* 样式化面板 */
+.info-box .panels {
+    height: 352px;
+    position: relative;
+    clear: both;
+}
+
+.info-box article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 352px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(136, 177, 170);
+}
+  
+.info-box .active-panel {
+    z-index: 1;
+}
+
+/* 一个固定位置的列表消息盒子: 更改 */
+/* 删除 margin； 0 auto; 不需要居中，添加 fixed 定位, 如下 */
+/* .info-box {
+    width: 450px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+} */
+
+.fake-content {
+    background-color: gainsboro;
+    color: black;
+    padding: 10px;
+    height: 2000px;
+    margin-left: 470px;
+}

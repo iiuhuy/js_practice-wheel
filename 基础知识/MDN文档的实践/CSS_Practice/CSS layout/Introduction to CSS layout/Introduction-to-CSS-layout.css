@@ -1,0 +1,10 @@
+/* nth-of-type(x): 在每组兄弟元素中选择第 x 个 y 元素 */
+div:nth-of-type(1) {
+    width: 48%;
+    float: left;
+}
+
+div:nth-of-type(2) {
+    width: 48%;
+    float: right;
+}

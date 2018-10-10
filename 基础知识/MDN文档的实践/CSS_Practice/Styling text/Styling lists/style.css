@@ -1,0 +1,57 @@
+/* General styles */
+/* 网站字体, 字体大小 */
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+ul,ol,dl,p {
+    font-size: 1.5rem;
+}
+
+/* height 段落和每个单独的列表项目将在行之间具有相同的间距 */
+li,p {
+    line-height: 1.5;
+}
+
+
+/* Description list styles */
+dd,dt {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* Unordered list styles */
+/* list-style-image 属性允许对于项目符号使用自定义图片, 然而这个属性控制项目符号的位置，大小等方面是有限的， 最好使用 background 属性 */
+ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+/* ul {
+    list-style-type: square;
+    list-style-image: url(example.png);
+    list-style-position: inside;
+} */
+
+ul li {
+    padding-left: 2rem;
+    background-image: url(star.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+/* list-style-type : 设置用于列表的项目符号的类型 */
+/* list-style-position : 设置在每个项目开始之前，项目符号是出现在列表项内，还是出现在其外 */
+ol {
+    list-style-type: upper-roman;
+}

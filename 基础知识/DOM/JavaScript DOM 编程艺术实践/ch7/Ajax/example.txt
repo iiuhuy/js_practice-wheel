@@ -1,0 +1,6 @@
+This was loaded asynchronously！！！
+
+
+该文件需要与 HTML 文件处于同一个域中的数据。因为:
+XMLHttpRequest 对象发送的请求只能访问与其所在的 HTML 处于同一个域中的数据, 而不能向其他域发送请求。
+否则会出现 Cross origin requests are only supported for HTTP.(跨域请求只支持 HTTP 协议) 的错误提示。
