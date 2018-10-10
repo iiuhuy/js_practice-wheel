@@ -59,4 +59,8 @@ JSX 中使用表达式:
     const props = {firstName: 'Ben', lastName: 'Hector'};
     const greeting = <Greeting {...props} />;
     ```
+<<<<<<< HEAD
 - 4.表达式作为子元素: `const element <li>{props.message}</li>;`;
+=======
+- 4.表达式作为子元素: `const element <li>{props.message}</li>;`
+>>>>>>> 1802f81121e20beea3a6936690dfdb8ac6b7948f
